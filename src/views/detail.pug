@@ -1,0 +1,8 @@
+extends layouts/main
+
+block content
+  .movie__container
+    h1 #{movie.title}
+    h3 #{movie.synopsis}
+    each item in movie.genres
+      li=item
